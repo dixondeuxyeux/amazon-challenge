@@ -10,11 +10,10 @@ function Checkout() {
   return (
     <div className='checkout'>
       <div className='checkout__left'>
-        <img className='checkout__ad' src='amazonBanner.jpg' alt='banner' />
+        <img className='checkout__ad' src='amazonbanner.jpg' alt='banner' />
         <div>
-          <h3> Hello, {user.email}</h3>
+          <h3> Hello, {user?.email}</h3>
           <h2 className='checkout__title'>Your Shopping Basket</h2>
-
 
           {basket.map((item) => (
             <CheckoutProduct
